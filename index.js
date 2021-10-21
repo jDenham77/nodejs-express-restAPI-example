@@ -26,7 +26,7 @@ app.post('/tshirt/:id', (req, res) => {
   const { id } = req.params;
   const { logo }= req.body; // the logo... is contained inside the body
 
-  // Check is there is a logo 
+  // Check is there is a logo.
   if (!logo) {
     res.status(418).send({message: 'We need a logo!'})
   }
